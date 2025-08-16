@@ -1,0 +1,88 @@
+import { Header } from "../components/Header"
+
+export function Produtos() {
+    const products = [
+        { name: "Nome Produto", price: "R$ 35,00" },
+        { name: "Nome Produto", price: "R$ 35,00" },
+        { name: "Nome Produto", price: "R$ 35,00" },
+        { name: "Nome Produto", price: "R$ 35,00" },
+        { name: "Nome Produto", price: "R$ 35,00" },
+        { name: "Nome Produto", price: "R$ 35,00" },
+        { name: "Nome Produto", price: "R$ 35,00" },
+        { name: "Nome Produto", price: "R$ 35,00" },
+        { name: "Nome Produto", price: "R$ 35,00" },
+    ]
+
+    return (
+        <div className="min-h-screen bg-[#00040f] text-white">
+            {/* Header */}
+            <Header />
+
+            {/* Main Content */}
+            <main className="px-6 py-16 lg:px-12 lg:py-24 pt-32">
+                {/* Products Section */}
+                <div className="max-w-6xl mx-auto pt-24">
+                    <h1 className="text-5xl font-bold text-center mb-12">Produtos</h1>
+
+                    {/* Products Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24 pt-8">
+                        {products.map((product, index) => (
+                            <div key={index} className="text-center">
+                                {/* 🔹 Quadrado centralizado */}
+                                <div
+                                    className="
+                                        bg-[#d9d9d9] rounded-2xl w-50 h-50 mx-auto mb-4
+                                        transform transition duration-300 
+                                        hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30
+                                    "
+                                ></div>
+
+                                {/* Nome e preço alinhados à esquerda */}
+                                <div className="w-48 mx-auto text-left">
+                                    <h3 className="text-white font-semibold text-xl mb-1">
+                                        {product.name}
+                                    </h3>
+                                    <p className="text-[#01f7ff] font-bold text-xl">
+                                        {product.price}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Projeto Finalizado Section */}
+                    <div className="text-center">
+                        <h2 className="text-4xl font-bold mb-12">
+                            Projeto <span className="text-[#01f7ff]">Finalizado</span>
+                        </h2>
+
+                        <div className="inline-block">
+                            {/* 🔹 Quadrado maior */}
+                            <div
+                                className="
+                                    bg-[#d9d9d9] rounded-2xl w-72 h-72 mx-auto mb-4
+                                    transform transition duration-300
+                                    hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/40
+                                "
+                            ></div>
+
+                            {/* Total alinhado à esquerda */}
+                            <div className="w-72 mx-auto text-left">
+                                <h3 className="text-white font-medium text-2xl mb-1">Total</h3>
+                                <p className="text-[#01f7ff] font-bold text-2xl">R$ 1.000,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            {/* Footer */}
+            <footer className="px-6 py-8 lg:px-12 border-t border-gray-800">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+                    <span className="text-xl font-bold">Logo</span>
+                    <p className="text-gray-400 text-sm">Todos os direitos reservados © 2025.</p>
+                </div>
+            </footer>
+        </div>
+    )
+}
