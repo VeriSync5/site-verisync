@@ -1,5 +1,5 @@
 import { Link } from "react-router"
-
+import Logo from "../imagem/Logo.png"
 
 export function Header() {
     return (
@@ -8,7 +8,13 @@ export function Header() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-16">
 
                     {/* Logo */}
-                    <span className="text-xl font-bold font-display">Logo</span>
+                    <Link to={"/"} className="flex items-center">
+                        <img
+                            src={Logo}
+                            alt="Logo"
+                            className="h-28 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                        />
+                    </Link>
 
                     {/* Links centralizados */}
                     <div className="hidden lg:flex items-center space-x-6">
@@ -17,7 +23,7 @@ export function Header() {
                         <Link to={"/quemsomos"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Quem Somos?</Link>
                         <Link to={"/produtos"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Produtos</Link>
                         <Link to={"/referências"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Referências</Link>
-                        <Link to={"/"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Jogo</Link>
+                        <Link to={"/jogo"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Jogo</Link>
                     </div>
 
                     {/* Botão Login */}
@@ -27,6 +33,5 @@ export function Header() {
                 </div>
             </nav>
         </header>
-
     )
 }

@@ -1,6 +1,7 @@
 import { Header } from "../components/Header"
 import RuanImg from "../imagem/Ruan.jpeg";
 import LarissaImg from "../imagem/Larissa.jpeg";
+import Logo from "../imagem/Logo.png"
 
 export function QuemSomos() {
     return (
@@ -24,17 +25,17 @@ export function QuemSomos() {
                 <div className="space-y-16 pt-16">
                     {/* Ruan - Left aligned */}
                     <div className="flex items-center gap-8">
-                        
-                            <div className="w-40 h-40 rounded-lg flex-shrink-0 overflow-hidden">
-                                <img
-                                    src={RuanImg}
-                                    alt="Ruan"
-                                    width={128}
-                                    height={128}
-                                    className="object-cover w-full h-full"
-                                />
-                            </div>
-                        
+
+                        <div className="w-40 h-40 rounded-lg flex-shrink-0 overflow-hidden">
+                            <img
+                                src={RuanImg}
+                                alt="Ruan"
+                                width={128}
+                                height={128}
+                                className="object-cover w-full h-full"
+                            />
+                        </div>
+
 
                         <div>
                             <h3 className="text-3xl font-bold mb-2">
@@ -93,7 +94,7 @@ export function QuemSomos() {
                                 @kauannyaguirre
                             </a>
                         </div>
-                        
+
                     </div>
 
                     {/* Nayara - Right aligned */}
@@ -135,12 +136,26 @@ export function QuemSomos() {
             </main>
 
             {/* Footer */}
-            <footer className="px-6 py-8 lg:px-12 border-t border-gray-800">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-                    <span className="text-xl font-bold">Logo</span>
-                    <p className="text-gray-400 text-sm">Todos os direitos reservados © 2025.</p>
-                </div>
-            </footer>
+            <div className="pt-16">
+                {/* Footer com altura fixa */}
+                <footer className="px-6 lg:px-12 border-t border-gray-800 h-28 flex items-center">
+                    <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
+
+                        {/* Logo no footer */}
+                        <div className="flex items-center gap-2">
+                            <img
+                                src={Logo}
+                                alt="Logo"
+                                className="h-28 w-auto object-contain"
+                            />
+                        </div>
+
+                        <p className="text-gray-400 text-sm">
+                            Todos os direitos reservados © 2025.
+                        </p>
+                    </div>
+                </footer>
+            </div>
         </div>
 
     )

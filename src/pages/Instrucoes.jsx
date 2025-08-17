@@ -1,4 +1,5 @@
 import { Header } from "../components/Header"
+import Logo from "../imagem/Logo.png"
 
 export function Instrucoes() {
   return (
@@ -41,7 +42,7 @@ export function Instrucoes() {
               <h3 className="text-3xl font-bold text-white mb-6">
                 Passo <span className="text-[#01f7ff]">1</span>:
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -56,7 +57,7 @@ export function Instrucoes() {
               <h3 className="text-3xl font-bold text-white mb-6">
                 Passo <span className="text-[#01f7ff]">2</span>:
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -69,7 +70,7 @@ export function Instrucoes() {
               <h3 className="text-3xl font-bold text-white mb-6">
                 Passo <span className="text-[#01f7ff]">3</span>:
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-300leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -84,7 +85,7 @@ export function Instrucoes() {
               <h3 className="text-3xl font-bold text-white mb-6">
                 Passo <span className="text-[#01f7ff]">4</span>:
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -95,14 +96,27 @@ export function Instrucoes() {
       </main>
 
       {/* Footer */}
-      <footer className="px-6 py-8 lg:px-12 border-t border-gray-800">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2">
-            <span className="text-xl font-bold">Logo</span>
+      <div className="pt-16">
+        {/* Footer com altura fixa */}
+        <footer className="px-6 lg:px-12 border-t border-gray-800 h-28 flex items-center">
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
+
+            {/* Logo no footer */}
+            <div className="flex items-center gap-2">
+              <img
+                src={Logo}
+                alt="Logo"
+                className="h-28 w-auto object-contain"
+              />
+            </div>
+
+            <p className="text-gray-400 text-sm">
+              Todos os direitos reservados © 2025.
+            </p>
           </div>
-          <p className="text-gray-400 text-sm">Todos os direitos reservados © 2025.</p>
-        </div>
-      </footer>
+        </footer>
+      </div>
+
     </div>
   )
 }

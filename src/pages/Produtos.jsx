@@ -1,4 +1,5 @@
 import { Header } from "../components/Header"
+import Logo from "../imagem/Logo.png"
 
 export function Produtos() {
     const products = [
@@ -21,7 +22,7 @@ export function Produtos() {
             {/* Main Content */}
             <main className="px-6 py-16 lg:px-12 lg:py-24 pt-32">
                 {/* Products Section */}
-                <div className="max-w-6xl mx-auto pt-24">
+                <div className="max-w-6xl mx-auto pt-20">
                     <h1 className="text-5xl font-bold text-center mb-12">Produtos</h1>
 
                     {/* Products Grid */}
@@ -77,12 +78,26 @@ export function Produtos() {
             </main>
 
             {/* Footer */}
-            <footer className="px-6 py-8 lg:px-12 border-t border-gray-800">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-                    <span className="text-xl font-bold">Logo</span>
-                    <p className="text-gray-400 text-sm">Todos os direitos reservados © 2025.</p>
-                </div>
-            </footer>
+            <div className="pt-16">
+                {/* Footer com altura fixa */}
+                <footer className="px-6 lg:px-12 border-t border-gray-800 h-28 flex items-center">
+                    <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
+
+                        {/* Logo no footer */}
+                        <div className="flex items-center gap-2">
+                            <img
+                                src={Logo}
+                                alt="Logo"
+                                className="h-28 w-auto object-contain"
+                            />
+                        </div>
+
+                        <p className="text-gray-400 text-sm">
+                            Todos os direitos reservados © 2025.
+                        </p>
+                    </div>
+                </footer>
+            </div>
         </div>
     )
 }
