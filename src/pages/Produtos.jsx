@@ -4,7 +4,7 @@ import Logo from "../imagem/Logo.png"
 export function Produtos() {
     const products = [
         { name: "Nome Produto", price: "R$ 35,00" },
-        { name: "Nome Produto", price: "R$ 35,00" },
+        { name: "RUan", price: "R$ 35,00" },
         { name: "Nome Produto", price: "R$ 35,00" },
         { name: "Nome Produto", price: "R$ 35,00" },
         { name: "Nome Produto", price: "R$ 35,00" },
@@ -40,10 +40,10 @@ export function Produtos() {
 
                                 {/* Nome e preço alinhados à esquerda */}
                                 <div className="w-48 mx-auto text-left">
-                                    <h3 className="text-white font-semibold text-xl mb-1">
+                                    <h3 className="text-white font-semibold text-base mb-1">
                                         {product.name}
                                     </h3>
-                                    <p className="text-[#01f7ff] font-bold text-xl">
+                                    <p className="text-[#01f7ff] font-bold text-base">
                                         {product.price}
                                     </p>
                                 </div>
@@ -53,7 +53,7 @@ export function Produtos() {
 
                     {/* Projeto Finalizado Section */}
                     <div className="text-center">
-                        <h2 className="text-4xl font-bold mb-12">
+                        <h2 className="text-4xl font-bold mb-12 pt-16">
                             Projeto <span className="text-[#01f7ff]">Finalizado</span>
                         </h2>
 

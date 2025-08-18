@@ -42,7 +42,7 @@ export function Instrucoes() {
               <h3 className="text-3xl font-bold text-white mb-6">
                 Passo <span className="text-[#01f7ff]">1</span>:
               </h3>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-base text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -57,7 +57,7 @@ export function Instrucoes() {
               <h3 className="text-3xl font-bold text-white mb-6">
                 Passo <span className="text-[#01f7ff]">2</span>:
               </h3>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-base text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -70,7 +70,7 @@ export function Instrucoes() {
               <h3 className="text-3xl font-bold text-white mb-6">
                 Passo <span className="text-[#01f7ff]">3</span>:
               </h3>
-              <p className="text-lg text-gray-300leading-relaxed">
+              <p className="text-base text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -85,7 +85,7 @@ export function Instrucoes() {
               <h3 className="text-3xl font-bold text-white mb-6">
                 Passo <span className="text-[#01f7ff]">4</span>:
               </h3>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-base text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>

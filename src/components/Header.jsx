@@ -18,12 +18,12 @@ export function Header() {
 
                     {/* Links centralizados */}
                     <div className="hidden lg:flex items-center space-x-6">
-                        <Link to={"/"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Home</Link>
-                        <Link to={"/instruções"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Instruções</Link>
-                        <Link to={"/quemsomos"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Quem Somos?</Link>
-                        <Link to={"/produtos"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Produtos</Link>
-                        <Link to={"/referências"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Referências</Link>
-                        <Link to={"/jogo"} className="text-lg font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Jogo</Link>
+                        <Link to={"/"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Home</Link>
+                        <Link to={"/instruções"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Instruções</Link>
+                        <Link to={"/quemsomos"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Quem Somos?</Link>
+                        <Link to={"/produtos"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Produtos</Link>
+                        <Link to={"/referências"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Referências</Link>
+                        <Link to={"/jogo"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Jogo</Link>
                     </div>
 
                     {/* Botão Login */}

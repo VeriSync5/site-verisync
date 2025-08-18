@@ -1,6 +1,9 @@
 import { Header } from "../components/Header"
 import Logo from "../imagem/Logo.png"
 import Fotohome2 from "../imagem/Fotohome2.png"
+import "./Home.css"
+import "@fontsource/poppins/400.css";
+import { Shield, Flame, Phone } from "lucide-react";
 
 export function Home() {
     return (
@@ -8,8 +11,10 @@ export function Home() {
             <Header />
 
             {/* Hero Section */}
-            <section className="pt-60">
+            <section className="pt-32 lg:pt-60">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
+
+                    {/* Texto */}
                     <div className="space-y-6">
                         <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-left">
                             <span className="block whitespace-nowrap">
@@ -19,14 +24,15 @@ export function Home() {
                                 à prova do <span className="text-[#01f7ff]">futuro.</span>
                             </span>
                         </h1>
-                        <p className="text-lg text-gray-300 text-left">
+                        <p className="text-base text-gray-300 text-left font-poppins">
                             Soluções inteligentes de monitoramento e proteção residencial, para
                             garantir a sua segurança e da sua família 24 horas por dia.
                         </p>
                     </div>
-                    <div className="flex justify-center">
-                        {/* Imagem do herói */}
-                    </div>
+
+
+                    {/* Imagem do herói */}
+
                 </div>
             </section>
 
@@ -57,7 +63,7 @@ export function Home() {
                             <br />
                             protegemos sua casa.
                         </h2>
-                        <p className="text-lg text-gray-300 max-w-md">
+                        <p className="text-base text-gray-300 max-w-md">
                             Oferecemos soluções inteligentes em segurança, que vão além do
                             monitoramento convencional.
                         </p>
@@ -65,7 +71,7 @@ export function Home() {
                     <div className="space-y-8">
                         <div className="flex gap-4 p-4 rounded-xl bg-white/5 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#01f7ff]">
                             <div className="w-12 h-12 bg-[#01f7ff]/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                {/* Ícone */}
+                                <Shield className="w-6 h-6 text-[#01f7ff]" />
                             </div>
                             <div className="space-y-2">
                                 <h3 className="text-xl font-semibold">Sistema anti-invasão</h3>
@@ -76,7 +82,7 @@ export function Home() {
                         </div>
                         <div className="flex gap-4 p-4 rounded-xl bg-white/5 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#01f7ff]">
                             <div className="w-12 h-12 bg-[#01f7ff]/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                {/* Ícone */}
+                                <Flame className="w-6 h-6 text-[#01f7ff]" />
                             </div>
                             <div className="space-y-2">
                                 <h3 className="text-xl font-semibold">Detecção de incêndio</h3>
@@ -87,7 +93,7 @@ export function Home() {
                         </div>
                         <div className="flex gap-4 p-4 rounded-xl bg-white/5 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#01f7ff]">
                             <div className="w-12 h-12 bg-[#01f7ff]/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                {/* Ícone */}
+                                <Phone className="w-6 h-6 text-[#01f7ff]" />
                             </div>
                             <div className="space-y-2">
                                 <h3 className="text-xl font-semibold">

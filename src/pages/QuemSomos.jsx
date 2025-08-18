@@ -15,7 +15,7 @@ export function QuemSomos() {
                     <h1 className="text-5xl font-bold mb-6">
                         Quem <span className="text-[#01f7ff]">Somos</span>?
                     </h1>
-                    <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
                         Somos um grupo de estudantes dedicados ao desenvolvimento deste protótipo, unindo criatividade e
                         conhecimento técnico para entregar uma solução funcional e inovadora.
                     </p>
