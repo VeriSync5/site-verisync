@@ -3,7 +3,8 @@ import Logo from "../imagem/Logo.png"
 import Fotohome2 from "../imagem/Fotohome2.png"
 import "./Home.css"
 import "@fontsource/poppins/400.css";
-import { Shield, Flame, Phone } from "lucide-react";
+import { Shield, Flame, Phone, Camera } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function Home() {
     return (
@@ -11,8 +12,8 @@ export function Home() {
             <Header />
 
             {/* Hero Section */}
-            <section className="pt-32 lg:pt-60">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
+            <section className="pt-32 lg:pt-40">
+                <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-[1fr_1.3fr] gap-12 items-center">
 
                     {/* Texto */}
                     <div className="space-y-6">
@@ -30,11 +31,26 @@ export function Home() {
                         </p>
                     </div>
 
-
                     {/* Imagem do herói */}
+                    <div className="flex justify-end mr-24">
+                        <motion.div
+                            animate={{
+                                scale: [1, 1.1, 1], // só pulso
+                            }}
+                            transition={{
+                                duration: 1.5,
+                                repeat: Infinity,
+                                ease: "easeInOut",
+                            }}
+                            className="drop-shadow-[0_0_25px_#01f7ff]" // glow neon fixo
+                        >
+                            <Camera className="w-60 h-60 text-[#01f7ff]" />
+                        </motion.div>
+                    </div>
 
                 </div>
             </section>
+
 
             {/* Estatísticas */}
             <section className="py-16">
