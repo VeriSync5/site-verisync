@@ -16,8 +16,8 @@ export function Home() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-[1fr_1.3fr] gap-12 items-center">
 
                     {/* Texto */}
-                    <div className="space-y-6">
-                        <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-left">
+                    <div className="space-y-6 text-left lg:text-left">
+                        <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-left lg:text-left">
                             <span className="block whitespace-nowrap">
                                 Segurança residencial
                             </span>
@@ -25,7 +25,7 @@ export function Home() {
                                 à prova do <span className="text-[#01f7ff]">futuro.</span>
                             </span>
                         </h1>
-                        <p className="text-base text-gray-300 text-left font-poppins">
+                        <p className="text-base text-gray-300 font-poppins text-left lg:text-left">
                             Soluções inteligentes de monitoramento e proteção residencial, para
                             garantir a sua segurança e da sua família 24 horas por dia.
                         </p>
@@ -51,7 +51,6 @@ export function Home() {
                 </div>
             </section>
 
-
             {/* Estatísticas */}
             <section className="py-16">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-3 gap-8 text-center pt-20">
@@ -73,13 +72,13 @@ export function Home() {
             {/* Funcionalidades */}
             <section className="py-16 lg:py-24">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-start pt-16">
-                    <div className="space-y-6">
-                        <h2 className="text-3xl lg:text-4xl font-bold leading-tight">
+                    <div className="space-y-6 text-left lg:text-left">
+                        <h2 className="text-3xl lg:text-4xl font-bold leading-tight text-left lg:text-left">
                             Você vive sua vida, nós
                             <br />
                             protegemos sua casa.
                         </h2>
-                        <p className="text-base text-gray-300 max-w-md">
+                        <p className="text-base text-gray-300 max-w-md text-left lg:text-left">
                             Oferecemos soluções inteligentes em segurança, que vão além do
                             monitoramento convencional.
                         </p>
@@ -128,8 +127,19 @@ export function Home() {
             <section className="py-12 lg:py-16">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
 
+                    {/* Texto */}
+                    <div className="space-y-6 flex flex-col items-start lg:items-end order-1 lg:order-2">
+                        <h2 className="text-3xl lg:text-4xl font-bold leading-tight text-left lg:text-right">
+                            Segurança é essencial.<br />
+                            Proteja o que você ama agora!
+                        </h2>
+                        <button className="bg-[#01f7ff] text-[#00040f] hover:bg-[#01f7ff]/90 rounded-xl px-6 py-3 text-base font-semibold self-center lg:self-end shadow-lg">
+                            Instale o App
+                        </button>
+                    </div>
+
                     {/* Imagem do cadeado */}
-                    <div className="flex justify-center">
+                    <div className="flex justify-center order-2 lg:order-1">
                         <img
                             src={Fotohome2}
                             alt="Cadeado segurança"
@@ -137,27 +147,15 @@ export function Home() {
                         />
                     </div>
 
-                    {/* Texto */}
-                    <div className="space-y-6 flex flex-col items-end">
-                        <h2 className="text-3xl lg:text-4xl font-bold leading-tight text-right">
-                            Segurança é essencial.<br />
-                            Proteja o que você ama agora!
-                        </h2>
-                        <button className="bg-[#01f7ff] text-[#00040f] hover:bg-[#01f7ff]/90 rounded-xl px-6 py-3 text-base font-semibold self-end shadow-lg">
-                            Instale o App
-                        </button>
-                    </div>
-
                 </div>
             </section>
 
+
             {/* Footer */}
             <div className="pt-16">
-                {/* Footer com altura fixa */}
                 <footer className="px-6 lg:px-12 border-t border-gray-800 h-28 flex items-center">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
 
-                        {/* Logo no footer */}
                         <div className="flex items-center gap-2">
                             <img
                                 src={Logo}
