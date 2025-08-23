@@ -1,10 +1,11 @@
 import { useState } from "react"
 import { Link } from "react-router"
-import { Menu, X } from "lucide-react"
+import { Menu, Home, BookOpen, Users, Package, FileText, Gamepad2, Sun, Moon } from "lucide-react"
 import Logo from "../imagem/Logo.png"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
 
   return (
     <header>
@@ -20,50 +21,79 @@ export function Header() {
             />
           </Link>
 
-          {/* Links centralizados (desktop) */}
+          {/* Links Desktop */}
           <div className="hidden lg:flex items-center space-x-6">
-            <Link to={"/"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Home</Link>
-            <Link to={"/instruções"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Instruções</Link>
-            <Link to={"/quemsomos"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Quem Somos?</Link>
-            <Link to={"/produtos"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Produtos</Link>
-            <Link to={"/referências"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Referências</Link>
-            <Link to={"/jogo"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors duration-200">Jogo</Link>
+            <Link to={"/"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors">Home</Link>
+            <Link to={"/instruções"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors">Instruções</Link>
+            <Link to={"/quemsomos"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors">Quem Somos?</Link>
+            <Link to={"/produtos"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors">Produtos</Link>
+            <Link to={"/referências"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors">Referências</Link>
+            <Link to={"/jogo"} className="text-base font-medium text-white/80 hover:text-[#01f7ff] transition-colors">Jogo</Link>
           </div>
 
-          {/* Botão Login (desktop) */}
-          <button className="hidden lg:block bg-[#01f7ff] hover:bg-[#00d4dd] text-[#00040f] font-semibold px-6 py-2 rounded-full transition-all duration-200 shadow-lg hover:shadow-[#01f7ff]/25">
-            Login
+          {/* Botão Modo Claro/Escuro Desktop */}
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="hidden lg:flex items-center justify-center gap-2 bg-[#01f7ff] hover:bg-[#00d4dd] text-[#00040f] font-semibold px-6 py-2 rounded-full transition-all duration-200 shadow-lg hover:shadow-[#01f7ff]/25"
+          >
+            {darkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
           </button>
 
-          {/* Menu Hamburguer (mobile) */}
+          {/* Botão Hamburguer Mobile */}
           <button
-            className="lg:hidden p-2 text-[#01f7ff]"
+            className="lg:hidden p-2 bg-[#01f7ff] rounded-full"
             onClick={() => setIsOpen(true)}
           >
-            <Menu className="w-6 h-6" />
+            <Menu className="w-6 h-6 text-[#00040f]" />
           </button>
         </div>
       </nav>
 
-      {/* Menu lateral (mobile) */}
+      {/* Menu lateral Mobile */}
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex">
-          <div className="w-64 bg-[#00040f] border-r border-white/10 p-6 space-y-6">
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-bold text-white">Menu</span>
-              <button onClick={() => setIsOpen(false)}>
-                <X className="w-6 h-6 text-[#01f7ff]" />
+          <div className="w-72 bg-[#00040f] border-r border-white/10 p-6 flex flex-col justify-between">
+
+            {/* Topo - Modo Claro/Escuro */}
+            <div className="flex justify-end mb-8">
+              <button
+                onClick={() => setDarkMode(!darkMode)}
+                className="p-3 rounded-full bg-[#01f7ff] hover:bg-[#00d4dd] transition shadow-lg"
+              >
+                {darkMode ? <Sun className="w-6 h-6 text-black" /> : <Moon className="w-6 h-6 text-black" />}
               </button>
             </div>
 
-            <nav className="flex flex-col space-y-4">
-              <Link onClick={() => setIsOpen(false)} to={"/"} className="text-base text-white/80 hover:text-[#01f7ff] transition-colors">Home</Link>
-              <Link onClick={() => setIsOpen(false)} to={"/instruções"} className="text-base text-white/80 hover:text-[#01f7ff] transition-colors">Instruções</Link>
-              <Link onClick={() => setIsOpen(false)} to={"/quemsomos"} className="text-base text-white/80 hover:text-[#01f7ff] transition-colors">Quem Somos?</Link>
-              <Link onClick={() => setIsOpen(false)} to={"/produtos"} className="text-base text-white/80 hover:text-[#01f7ff] transition-colors">Produtos</Link>
-              <Link onClick={() => setIsOpen(false)} to={"/referências"} className="text-base text-white/80 hover:text-[#01f7ff] transition-colors">Referências</Link>
-              <Link onClick={() => setIsOpen(false)} to={"/jogo"} className="text-base text-white/80 hover:text-[#01f7ff] transition-colors">Jogo</Link>
+            {/* Links - ocupam quase a largura toda */}
+            <nav className="flex flex-col space-y-10">
+              <Link onClick={() => setIsOpen(false)} to={"/"} className="w-full flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-[#01f7ff]/20 text-lg text-white/80 hover:text-[#01f7ff] transition-all">
+                <Home size={22} /> Home
+              </Link>
+              <Link onClick={() => setIsOpen(false)} to={"/instruções"} className="w-full flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-[#01f7ff]/20 text-lg text-white/80 hover:text-[#01f7ff] transition-all">
+                <BookOpen size={22} /> Instruções
+              </Link>
+              <Link onClick={() => setIsOpen(false)} to={"/quemsomos"} className="w-full flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-[#01f7ff]/20 text-lg text-white/80 hover:text-[#01f7ff] transition-all">
+                <Users size={22} /> Quem Somos?
+              </Link>
+              <Link onClick={() => setIsOpen(false)} to={"/produtos"} className="w-full flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-[#01f7ff]/20 text-lg text-white/80 hover:text-[#01f7ff] transition-all">
+                <Package size={22} /> Produtos
+              </Link>
+              <Link onClick={() => setIsOpen(false)} to={"/referências"} className="w-full flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-[#01f7ff]/20 text-lg text-white/80 hover:text-[#01f7ff] transition-all">
+                <FileText size={22} /> Referências
+              </Link>
+              <Link onClick={() => setIsOpen(false)} to={"/jogo"} className="w-full flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-[#01f7ff]/20 text-lg text-white/80 hover:text-[#01f7ff] transition-all">
+                <Gamepad2 size={22} /> Jogo
+              </Link>
             </nav>
+            {/* Botão Fechar */}
+            <div className="mt-10">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="w-full flex items-center justify-center gap-2 bg-[#01f7ff] hover:bg-[#00d4dd] text-[#00040f] font-semibold py-3 rounded-full transition-all duration-200 shadow-md"
+              >
+                Fechar
+              </button>
+            </div>
           </div>
 
           {/* Fundo clicável fecha o menu */}
