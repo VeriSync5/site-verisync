@@ -48,7 +48,7 @@ export function Home() {
 
 
             {/* Estatísticas */}
-            <section className="py-16">
+            <section className="py-16 mt-16 md:mt-0">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-3 gap-8 text-center pt-20 md:gap-8 gap-y-12">
 
                     {/* Item 1 */}
@@ -73,8 +73,9 @@ export function Home() {
             </section>
 
 
+
             {/* Funcionalidades */}
-            <section className="py-16 lg:py-24">
+            <section className="py-20 lg:py-24">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-start pt-16">
                     <div className="space-y-4 text-left lg:text-left max-w-full lg:max-w-md">
                         <h2 className="text-4xl sm:text-4xl lg:text-4xl font-bold leading-tight">
@@ -127,7 +128,7 @@ export function Home() {
             </section>
 
             {/* Call to Action */}
-            <section className="py-16 lg:py-16">
+            <section className="py-20 lg:py-16">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
 
                     {/* Texto */}
