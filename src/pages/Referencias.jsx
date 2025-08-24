@@ -20,7 +20,7 @@ export function Referencias() {
                             <h2 className="text-3xl md:text-3xl font-bold mb-4">
                                 Artigo <span className="text-[#01f7ff]">1</span>:
                             </h2>
-                            <a href="www.artigocientifico.com.br" className="text-white text-lg hover:text-[#01f7ff]">
+                            <a href="www.artigocientifico.com.br" className="text-gray-300 text-base hover:text-[#01f7ff]">
                                 www.artigocientifico.com.br
                             </a>
                         </div>
@@ -30,7 +30,7 @@ export function Referencias() {
                             <h2 className="text-3xl md:text-3xl font-bold mb-4">
                                 Artigo <span className="text-[#01f7ff]">2</span>:
                             </h2>
-                            <a href="www.artigocientifico.com.br" className="text-white text-lg hover:text-[#01f7ff]">
+                            <a href="www.artigocientifico.com.br" className="text-gray-300 text-base hover:text-[#01f7ff]">
                                 www.artigocientifico.com.br
                             </a>
                         </div>
@@ -40,7 +40,7 @@ export function Referencias() {
                             <h2 className="text-3xl md:text-3xl font-bold mb-4">
                                 Artigo <span className="text-[#01f7ff]">3</span>:
                             </h2>
-                            <a href="www.artigocientifico.com.br" className="text-white text-lg hover:text-[#01f7ff]">
+                            <a href="www.artigocientifico.com.br" className="text-gray-300 text-base hover:text-[#01f7ff]">
                                 www.artigocientifico.com.br
                             </a>
                         </div>
@@ -50,7 +50,7 @@ export function Referencias() {
                             <h2 className="text-3xl md:text-3xl font-bold mb-4">
                                 Artigo <span className="text-[#01f7ff]">4</span>:
                             </h2>
-                            <a href="www.artigocientifico.com.br" className="text-white text-lg hover:text-[#01f7ff]">
+                            <a href="www.artigocientifico.com.br" className="text-gray-300 text-base hover:text-[#01f7ff]">
                                 www.artigocientifico.com.br
                             </a>
                         </div>
@@ -60,7 +60,7 @@ export function Referencias() {
                             <h2 className="text-3xl md:text-3xl font-bold mb-4">
                                 Artigo <span className="text-[#01f7ff]">5</span>:
                             </h2>
-                            <a href="www.artigocientifico.com.br" className="text-white text-lg hover:text-[#01f7ff]">
+                            <a href="www.artigocientifico.com.br" className="text-gray-300 text-base hover:text-[#01f7ff]">
                                 www.artigocientifico.com.br
                             </a>
                         </div>
