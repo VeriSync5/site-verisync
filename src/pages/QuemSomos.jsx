@@ -32,7 +32,7 @@ export function QuemSomos() {
                         </div>
                         <div className="text-left">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou o <span className="text-[#01f7ff]">Ruan</span></h3>
-                            <a href="https://instagram.com/theofficial_ruan" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#01f7ff] transition-colors">@theofficial_ruan</a>
+                            <a href="https://instagram.com/theofficial_ruan" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#01f7ff] transition-colors">@theofficial_ruan</a>
                         </div>
                     </div>
 
@@ -43,7 +43,7 @@ export function QuemSomos() {
                         </div>
                         <div className="text-right">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou a <span className="text-[#01f7ff]">Larissa</span></h3>
-                            <a href="https://instagram.com/withluv_lari" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#01f7ff] transition-colors">@withluv_lari</a>
+                            <a href="https://instagram.com/withluv_lari" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#01f7ff] transition-colors">@withluv_lari</a>
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@ export function QuemSomos() {
                         <div className="w-40 h-40 bg-[#d9d9d9] rounded-lg flex-shrink-0"></div>
                         <div className="text-left">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou a <span className="text-[#01f7ff]">Kauanny</span></h3>
-                            <a href="https://instagram.com/kauannyaguirre" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#01f7ff] transition-colors">@kauannyaguirre</a>
+                            <a href="https://instagram.com/kauannyaguirre" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#01f7ff] transition-colors">@kauannyaguirre</a>
                         </div>
                     </div>
 
@@ -61,7 +61,7 @@ export function QuemSomos() {
                         <div className="w-40 h-40 bg-[#d9d9d9] rounded-lg flex-shrink-0"></div>
                         <div className="text-right">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou a <span className="text-[#01f7ff]">Nayara</span></h3>
-                            <a href="https://instagram.com/nayx_008" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#01f7ff] transition-colors">@nayx_008</a>
+                            <a href="https://instagram.com/nayx_008" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#01f7ff] transition-colors">@nayx_008</a>
                         </div>
                     </div>
 
@@ -78,7 +78,7 @@ export function QuemSomos() {
                 {/* Contact Section */}
                 <div className="text-center mt-32 mb-16">
                     <h2 className="text-3xl font-bold mb-4">Fale com a gente:</h2>
-                    <a href="https://forms.google.com/exemplo" className="text-gray-400 hover:text-[#01f7ff] transition-colors">
+                    <a href="https://forms.google.com/exemplo" className="text-gray-300 hover:text-[#01f7ff] transition-colors">
                         https://forms.google.com/exemplo
                     </a>
                 </div>

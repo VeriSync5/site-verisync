@@ -12,7 +12,7 @@ export function Home() {
             <Header />
 
             {/* Hero Section */}
-            <section className="pt-40 lg:pt-45">
+            <section className="pt-45 lg:pt-45">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 grid gap-8 lg:grid-cols-[1fr_1.3fr] items-center">
 
                     {/* Texto */}
@@ -53,19 +53,19 @@ export function Home() {
 
                     {/* Item 1 */}
                     <div className="space-y-2">
-                        <div className="text-4xl lg:text-4xl font-bold">1,200+</div>
+                        <div className="text-3xl lg:text-3xl font-bold">1,200+</div>
                         <div className="text-[#01f7ff] text-sm">Lares Protegidos</div>
                     </div>
 
                     {/* Item 2 */}
                     <div className="space-y-2 border-l border-r border-gray-700 md:px-8">
-                        <div className="text-4xl lg:text-4xl font-bold">350+</div>
+                        <div className="text-3xl lg:text-3xl font-bold">350+</div>
                         <div className="text-[#01f7ff] text-sm">Ocorrências evitadas</div>
                     </div>
 
                     {/* Item 3 */}
                     <div className="space-y-2">
-                        <div className="text-4xl lg:text-4xl font-bold">7s</div>
+                        <div className="text-3xl lg:text-3xl font-bold">7s</div>
                         <div className="text-[#01f7ff] text-sm">Tempo médio de resposta</div>
                     </div>
 

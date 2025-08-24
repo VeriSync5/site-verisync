@@ -4,7 +4,7 @@ import Logo from "../imagem/Logo.png"
 export function Produtos() {
     const products = [
         { name: "Nome Produto", price: "R$ 35,00" },
-        { name: "RUan", price: "R$ 35,00" },
+        { name: "Nome Produto", price: "R$ 35,00" },
         { name: "Nome Produto", price: "R$ 35,00" },
         { name: "Nome Produto", price: "R$ 35,00" },
         { name: "Nome Produto", price: "R$ 35,00" },
@@ -20,7 +20,7 @@ export function Produtos() {
             <Header />
 
             {/* Main Content */}
-            <main className="px-6 py-16 lg:px-12 lg:py-24 pt-32">
+            <main className="px-6 py-16 lg:px-12 lg:py-24 pt-24 lg:pt-30">
                 {/* Products Section */}
                 <div className="max-w-6xl mx-auto pt-20">
                     <h1 className="text-5xl font-bold text-center mb-12">Produtos</h1>
@@ -54,17 +54,13 @@ export function Produtos() {
                     {/* Projeto Finalizado Section */}
                     <div className="text-center">
                         <h2 className="text-4xl font-bold mb-12 pt-16">
-                            Projeto <span className="text-[#01f7ff]">Finalizado</span>
+                            Projeto <span className="block md:inline text-[#01f7ff]">Finalizado</span>
                         </h2>
 
                         <div className="inline-block">
                             {/* 🔹 Quadrado maior */}
                             <div
-                                className="
-                                    bg-[#d9d9d9] rounded-2xl w-72 h-72 mx-auto mb-4
-                                    transform transition duration-300
-                                    hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/40
-                                "
+                                className=" bg-[#d9d9d9] rounded-2xl w-72 h-72 mx-auto mb-4 transform transition duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/40"
                             ></div>
 
                             {/* Total alinhado à esquerda */}
@@ -79,20 +75,18 @@ export function Produtos() {
 
             {/* Footer */}
             <div className="pt-16">
-                {/* Footer com altura fixa */}
-                <footer className="px-6 lg:px-12 border-t border-gray-800 h-28 flex items-center">
+                <footer className="px-6 lg:px-12 border-t border-gray-800 py-4 lg:py-0">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
 
-                        {/* Logo no footer */}
                         <div className="flex items-center gap-2">
                             <img
                                 src={Logo}
                                 alt="Logo"
-                                className="h-28 w-auto object-contain"
+                                className="h-28 lg:h-28 w-auto object-contain"
                             />
                         </div>
 
-                        <p className="text-gray-400 text-sm">
+                        <p className="text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
                             Todos os direitos reservados © 2025.
                         </p>
                     </div>
