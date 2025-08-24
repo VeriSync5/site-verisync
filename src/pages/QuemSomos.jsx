@@ -1,6 +1,7 @@
 import { Header } from "../components/Header"
 import RuanImg from "../imagem/Ruan.jpeg";
 import LarissaImg from "../imagem/Larissa.jpeg";
+import NayaraImg from "../imagem/Nayara.jpeg";
 import Logo from "../imagem/Logo.png"
 
 export function QuemSomos() {
@@ -13,9 +14,12 @@ export function QuemSomos() {
 
                 {/* Header Section */}
                 <div className="text-center mb-20">
-                    <h1 className="text-5xl font-bold mb-10 md:mb-6">
-                        Quem <span className="text-[#01f7ff]">Somos</span>?
+                    <h1 className="text-5xl md:text-5xl font-bold mb-6 md:mb-10">
+                        Quem <br className="md:hidden" />
+                        <span className="text-[#01f7ff]">Somos</span>
+                        <span className="text-white">?</span>
                     </h1>
+
                     <p className="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
                         Somos um grupo de estudantes dedicados ao desenvolvimento deste protótipo, unindo criatividade e
                         conhecimento técnico para entregar uma solução funcional e inovadora.
@@ -58,7 +62,9 @@ export function QuemSomos() {
 
                     {/* Nayara - right */}
                     <div className="flex flex-col items-end gap-4 md:flex-row-reverse md:items-center md:gap-8">
-                        <div className="w-40 h-40 bg-[#d9d9d9] rounded-lg flex-shrink-0"></div>
+                        <div className="w-40 h-40 rounded-lg overflow-hidden">
+                            <img src={NayaraImg} alt="Larissa" className="object-cover w-full h-full" />
+                        </div>
                         <div className="text-right">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou a <span className="text-[#01f7ff]">Nayara</span></h3>
                             <a href="https://instagram.com/nayx_008" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#01f7ff] transition-colors">@nayx_008</a>
