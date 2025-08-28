@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer base {
+    html {
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
+
+@custom-variant dark (&:where(.dark, .dark *));

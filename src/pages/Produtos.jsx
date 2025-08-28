@@ -15,7 +15,7 @@ export function Produtos() {
     ]
 
     return (
-        <div className="min-h-screen bg-[#00040f] text-white">
+        <div className="min-h-screen bg-[#EFEFEF] dark:bg-[#00040f] text-[#0B1438] dark:text-white">
             {/* Header */}
             <Header />
 
@@ -32,7 +32,7 @@ export function Produtos() {
                                 {/* 🔹 Quadrado centralizado */}
                                 <div
                                     className="
-                                        bg-[#d9d9d9] rounded-2xl w-50 h-50 mx-auto mb-4
+                                        cursor-pointer bg-[#d9d9d9] rounded-2xl w-50 h-50 mx-auto mb-4
                                         transform transition duration-300 
                                         hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30
                                     "
@@ -40,7 +40,7 @@ export function Produtos() {
 
                                 {/* Nome e preço alinhados à esquerda */}
                                 <div className="w-48 mx-auto text-left">
-                                    <h3 className="text-white font-semibold text-base mb-1">
+                                    <h3 className="text-[#0B1438] dark:text-white font-semibold text-base mb-1">
                                         {product.name}
                                     </h3>
                                     <p className="text-[#01f7ff] font-bold text-base">
@@ -60,12 +60,12 @@ export function Produtos() {
                         <div className="inline-block">
                             {/* 🔹 Quadrado maior */}
                             <div
-                                className=" bg-[#d9d9d9] rounded-2xl w-72 h-72 mx-auto mb-4 transform transition duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/40"
+                                className=" bg-[#d9d9d9] cursor-pointer rounded-2xl w-72 h-72 mx-auto mb-4 transform transition duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/40"
                             ></div>
 
                             {/* Total alinhado à esquerda */}
                             <div className="w-72 mx-auto text-left">
-                                <h3 className="text-white font-medium text-2xl mb-1">Total</h3>
+                                <h3 className="text-[#0B1438] dark:text-white font-medium text-2xl mb-1">Total</h3>
                                 <p className="text-[#01f7ff] font-bold text-2xl">R$ 1.000,00</p>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ export function Produtos() {
 
             {/* Footer */}
             <div className="pt-16">
-                <footer className="px-6 lg:px-12 border-t border-gray-800 py-4 lg:py-0">
+                <footer className="px-6 lg:px-12 border-t border-[#d3cdcd] dark:border-gray-800 py-4 lg:py-0">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
 
                         <div className="flex items-center gap-2">
@@ -86,7 +86,7 @@ export function Produtos() {
                             />
                         </div>
 
-                        <p className="text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
+                        <p className="text-[#0A0F24] dark:text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
                             Todos os direitos reservados © 2025.
                         </p>
                     </div>

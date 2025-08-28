@@ -3,13 +3,13 @@ import Logo from "../imagem/Logo.png"
 
 export function Instrucoes() {
   return (
-    <div className="min-h-screen bg-[#00040f] text-white">
+    <div className="min-h-screen bg-[#EFEFEF] dark:bg-[#00040f] text-[#0B1438] dark:text-white">
       <Header />
       {/* Main Content */}
       <main className="max-w-6xl mx-auto pt-24 sm:px-6 lg:px-8 py-12 ">
 
         {/* Title */}
-        <div className="text-center md:text-center text-left mb-10 pt-24 md:pt-24 px-6 md:px-0">
+        <div className="md:text-center mb-10 pt-24 md:pt-24 px-6 md:px-0">
           <h1 className="text-5xl md:text-5xl font-bold mb-6">
             Descubra como o <span className="text-[#01f7ff]">VeriSync</span>
             <br />
@@ -41,9 +41,11 @@ export function Instrucoes() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-20 items-start">
             <div>
               <h3 className="text-3xl font-bold text-white mb-4 md:mb-6">
-                Passo <span className="text-[#01f7ff]">1</span>:
+               <span className="text-[#0B1438] dark:text-white">Passo</span> 
+               <span className="text-[#01f7ff]"> 1</span>
+               <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
-              <p className="text-base text-gray-300 leading-relaxed">
+              <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -56,9 +58,11 @@ export function Instrucoes() {
             <div></div>
             <div>
               <h3 className="text-3xl font-bold text-white mb-4 md:mb-6">
-                Passo <span className="text-[#01f7ff]">2</span>:
+               <span className="text-[#0B1438] dark:text-white">Passo</span> 
+               <span className="text-[#01f7ff]"> 2</span>
+               <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
-              <p className="text-base text-gray-300 leading-relaxed">
+              <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -69,9 +73,11 @@ export function Instrucoes() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-20 items-start">
             <div>
               <h3 className="text-3xl font-bold text-white mb-4 md:mb-6">
-                Passo <span className="text-[#01f7ff]">3</span>:
+               <span className="text-[#0B1438] dark:text-white">Passo</span> 
+               <span className="text-[#01f7ff]"> 3</span>
+               <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
-              <p className="text-base text-gray-300 leading-relaxed">
+              <p className="text-base  text-[#0A0F24] dark:text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -84,9 +90,11 @@ export function Instrucoes() {
             <div></div>
             <div>
               <h3 className="text-3xl font-bold text-white mb-4 md:mb-6">
-                Passo <span className="text-[#01f7ff]">4</span>:
+               <span className="text-[#0B1438] dark:text-white">Passo</span> 
+               <span className="text-[#01f7ff]"> 4</span>
+               <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
-              <p className="text-base text-gray-300 leading-relaxed">
+              <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -99,7 +107,7 @@ export function Instrucoes() {
 
       {/* Footer */}
       <div className="pt-16">
-        <footer className="px-6 lg:px-12 border-t border-gray-800 py-4 lg:py-0">
+        <footer className="px-6 lg:px-12 border-t border-[#d3cdcd] dark:border-gray-800 py-4 lg:py-0">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
 
             <div className="flex items-center gap-2">
@@ -110,7 +118,7 @@ export function Instrucoes() {
               />
             </div>
 
-            <p className="text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
+            <p className=" text-[#0A0F24] dark:text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
               Todos os direitos reservados © 2025.
             </p>
           </div>

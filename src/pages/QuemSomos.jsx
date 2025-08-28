@@ -2,11 +2,13 @@ import { Header } from "../components/Header"
 import RuanImg from "../imagem/Ruan.jpeg";
 import LarissaImg from "../imagem/Larissa.jpeg";
 import NayaraImg from "../imagem/Nayara.jpeg";
+import KauannyImg from "../imagem/Kauanny.jpeg";
+import VitorImg from "../imagem/Vitor.jpeg";
 import Logo from "../imagem/Logo.png"
 
 export function QuemSomos() {
     return (
-        <div className="min-h-screen bg-[#00040f] text-white">
+        <div className="min-h-screen bg-[#EFEFEF] dark:bg-[#00040f] text-[#0B1438] dark:text-white">
             <Header />
 
             {/* Main Content */}
@@ -17,10 +19,10 @@ export function QuemSomos() {
                     <h1 className="text-5xl md:text-5xl font-bold mb-6 md:mb-10">
                         Quem <br className="md:hidden" />
                         <span className="text-[#01f7ff]">Somos</span>
-                        <span className="text-white">?</span>
+                        <span className="text-[#0B1438] dark:text-white">?</span>
                     </h1>
 
-                    <p className="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-[#0A0F24] dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
                         Somos um grupo de estudantes dedicados ao desenvolvimento deste protótipo, unindo criatividade e
                         conhecimento técnico para entregar uma solução funcional e inovadora.
                     </p>
@@ -36,7 +38,7 @@ export function QuemSomos() {
                         </div>
                         <div className="text-left">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou o <span className="text-[#01f7ff]">Ruan</span></h3>
-                            <a href="https://instagram.com/theofficial_ruan" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#01f7ff] transition-colors">@theofficial_ruan</a>
+                            <a href="https://instagram.com/theofficial_ruan" target="_blank" rel="noopener noreferrer" className="text-[#0B1438] dark:text-gray-300 hover:text-[#01f7ff] transition-colors">@theofficial_ruan</a>
                         </div>
                     </div>
 
@@ -47,16 +49,18 @@ export function QuemSomos() {
                         </div>
                         <div className="text-right">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou a <span className="text-[#01f7ff]">Larissa</span></h3>
-                            <a href="https://instagram.com/withluv_lari" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#01f7ff] transition-colors">@withluv_lari</a>
+                            <a href="https://instagram.com/withluv_lari" target="_blank" rel="noopener noreferrer" className="text-[#0B1438] dark:text-gray-300 hover:text-[#01f7ff] transition-colors">@withluv_lari</a>
                         </div>
                     </div>
 
                     {/* Kauanny - left */}
                     <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:gap-8">
-                        <div className="w-40 h-40 bg-[#d9d9d9] rounded-lg flex-shrink-0"></div>
+                        <div className="w-40 h-40 rounded-lg overflow-hidden">
+                            <img src={KauannyImg} alt="Kauanny" className="object-cover w-full h-full" />
+                        </div>
                         <div className="text-left">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou a <span className="text-[#01f7ff]">Kauanny</span></h3>
-                            <a href="https://instagram.com/kauannyaguirre" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#01f7ff] transition-colors">@kauannyaguirre</a>
+                            <a href="https://instagram.com/kauannyaguirre" target="_blank" rel="noopener noreferrer" className="text-[#0B1438] dark:text-gray-300 hover:text-[#01f7ff] transition-colors">@kauannyaguirre</a>
                         </div>
                     </div>
 
@@ -67,13 +71,15 @@ export function QuemSomos() {
                         </div>
                         <div className="text-right">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou a <span className="text-[#01f7ff]">Nayara</span></h3>
-                            <a href="https://instagram.com/nayx_008" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#01f7ff] transition-colors">@nayx_008</a>
+                            <a href="https://instagram.com/nayx_008" target="_blank" rel="noopener noreferrer" className="text-[#0B1438] dark:text-gray-300 hover:text-[#01f7ff] transition-colors">@nayx_008</a>
                         </div>
                     </div>
 
                     {/* Vitor - left */}
                     <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:gap-8">
-                        <div className="w-40 h-40 bg-[#d9d9d9] rounded-lg flex-shrink-0"></div>
+                        <div className="w-40 h-40 rounded-lg overflow-hidden">
+                            <img src={VitorImg} alt="Vitor" className="object-cover w-full h-full" />
+                        </div>
                         <div className="text-left">
                             <h3 className="text-3xl font-bold mb-2">Olá, eu sou o <span className="text-[#01f7ff]">Vitor</span></h3>
                         </div>
@@ -84,7 +90,7 @@ export function QuemSomos() {
                 {/* Contact Section */}
                 <div className="text-center mt-32 mb-16">
                     <h2 className="text-3xl font-bold mb-4">Fale com a gente:</h2>
-                    <a href="https://forms.google.com/exemplo" className="text-gray-300 hover:text-[#01f7ff] transition-colors">
+                    <a href="https://forms.google.com/exemplo" className="text-[#0A0F24] dark:text-gray-300 hover:text-[#01f7ff] transition-colors">
                         https://forms.google.com/exemplo
                     </a>
                 </div>
@@ -92,7 +98,7 @@ export function QuemSomos() {
 
             {/* Footer */}
             <div className="pt-16">
-                <footer className="px-6 lg:px-12 border-t border-gray-800 py-4 lg:py-0">
+                <footer className="px-6 lg:px-12 border-t border-[#d3cdcd] dark:border-gray-800 py-4 lg:py-0">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
 
                         <div className="flex items-center gap-2">
@@ -103,7 +109,7 @@ export function QuemSomos() {
                             />
                         </div>
 
-                        <p className="text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
+                        <p className="text-[#0A0F24] dark:text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
                             Todos os direitos reservados © 2025.
                         </p>
                     </div>
