@@ -1,5 +1,6 @@
 import { Header } from "../components/Header"
 import Logo from "../imagem/Logo.png"
+import LogoModoClaro from "../imagem/LogoModoClaro.png"
 
 export function Instrucoes() {
   return (
@@ -41,9 +42,9 @@ export function Instrucoes() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-20 items-start">
             <div>
               <h3 className="text-3xl font-bold text-white mb-4 md:mb-6">
-               <span className="text-[#0B1438] dark:text-white">Passo</span> 
-               <span className="text-[#01f7ff]"> 1</span>
-               <span className="text-[#0B1438] dark:text-white">:</span>
+                <span className="text-[#0B1438] dark:text-white">Passo</span>
+                <span className="text-[#01f7ff]"> 1</span>
+                <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -58,9 +59,9 @@ export function Instrucoes() {
             <div></div>
             <div>
               <h3 className="text-3xl font-bold text-white mb-4 md:mb-6">
-               <span className="text-[#0B1438] dark:text-white">Passo</span> 
-               <span className="text-[#01f7ff]"> 2</span>
-               <span className="text-[#0B1438] dark:text-white">:</span>
+                <span className="text-[#0B1438] dark:text-white">Passo</span>
+                <span className="text-[#01f7ff]"> 2</span>
+                <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -73,9 +74,9 @@ export function Instrucoes() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-20 items-start">
             <div>
               <h3 className="text-3xl font-bold text-white mb-4 md:mb-6">
-               <span className="text-[#0B1438] dark:text-white">Passo</span> 
-               <span className="text-[#01f7ff]"> 3</span>
-               <span className="text-[#0B1438] dark:text-white">:</span>
+                <span className="text-[#0B1438] dark:text-white">Passo</span>
+                <span className="text-[#01f7ff]"> 3</span>
+                <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base  text-[#0A0F24] dark:text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -90,9 +91,9 @@ export function Instrucoes() {
             <div></div>
             <div>
               <h3 className="text-3xl font-bold text-white mb-4 md:mb-6">
-               <span className="text-[#0B1438] dark:text-white">Passo</span> 
-               <span className="text-[#01f7ff]"> 4</span>
-               <span className="text-[#0B1438] dark:text-white">:</span>
+                <span className="text-[#0B1438] dark:text-white">Passo</span>
+                <span className="text-[#01f7ff]"> 4</span>
+                <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -106,24 +107,34 @@ export function Instrucoes() {
       </main>
 
       {/* Footer */}
+      {/* Footer */}
       <div className="pt-16">
         <footer className="px-6 lg:px-12 border-t border-[#d3cdcd] dark:border-gray-800 py-4 lg:py-0">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
 
+            {/* Logo */}
             <div className="flex items-center gap-2">
               <img
+                src={LogoModoClaro}
+                alt="Logo Modo Claro"
+                className="block dark:hidden h-28 lg:h-28 w-auto object-contain"
+              />
+              <img
                 src={Logo}
-                alt="Logo"
-                className="h-28 lg:h-28 w-auto object-contain"
+                alt="Logo Modo Escuro"
+                className="hidden dark:block h-28 lg:h-28 w-auto object-contain"
               />
             </div>
 
-            <p className=" text-[#0A0F24] dark:text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
+            {/* Texto */}
+            <p className="text-[#0A0F24] dark:text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
               Todos os direitos reservados © 2025.
             </p>
           </div>
         </footer>
       </div>
+
+
 
     </div>
   )

@@ -2,12 +2,12 @@ import { useState, useContext } from "react"
 import { Link } from "react-router"
 import { Menu, Home, BookOpen, Users, Package, FileText, Gamepad2, Sun, Moon } from "lucide-react"
 import Logo from "../imagem/Logo.png"
+import LogoModoClaro from "../imagem/LogoModoClaro.png"
 
 import { ThemeContext } from "../context/ThemeContext"
 
 export function Header() {
   const { theme, toggle } = useContext(ThemeContext)
-
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -17,11 +17,19 @@ export function Header() {
 
           {/* Logo */}
           <Link to={"/"} className="flex items-center">
-            <img
-              src={Logo}
-              alt="Logo"
-              className="h-28 w-auto object-contain transition-transform duration-300 hover:scale-105"
-            />
+            {theme === "dark" ? (
+              <img
+                src={Logo}
+                alt="Logo Modo Escuro"
+                className="h-28 w-auto object-contain transition-transform duration-300 hover:scale-105"
+              />
+            ) : (
+              <img
+                src={LogoModoClaro}
+                alt="Logo Modo Claro"
+                className="h-28 w-auto object-contain transition-transform duration-300 hover:scale-105"
+              />
+            )}
           </Link>
 
           {/* Links Desktop */}
@@ -71,7 +79,7 @@ export function Header() {
               </button>
             </div>
 
-            {/* Links - ocupam quase a largura toda */}
+            {/* Links */}
             <nav className="flex flex-col space-y-10">
               <Link onClick={() => setIsOpen(false)} to={"/"} className="w-full flex items-center gap-3 px-4 py-3 rounded-lg bg-[#d3cdcd] dark:bg-white/5 hover:bg-[#01f7ff]/20 text-lg text-[#0B1438] dark:text-white/80 hover:text-[#01f7ff] transition-all">
                 <Home size={22} /> Home

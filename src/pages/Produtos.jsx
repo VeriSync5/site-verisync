@@ -1,5 +1,6 @@
 import { Header } from "../components/Header"
 import Logo from "../imagem/Logo.png"
+import LogoModoClaro from "../imagem/LogoModoClaro.png"
 
 export function Produtos() {
     const products = [
@@ -74,24 +75,33 @@ export function Produtos() {
             </main>
 
             {/* Footer */}
+            {/* Footer */}
             <div className="pt-16">
                 <footer className="px-6 lg:px-12 border-t border-[#d3cdcd] dark:border-gray-800 py-4 lg:py-0">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center w-full">
 
+                        {/* Logo */}
                         <div className="flex items-center gap-2">
                             <img
+                                src={LogoModoClaro}
+                                alt="Logo Modo Claro"
+                                className="block dark:hidden h-28 lg:h-28 w-auto object-contain"
+                            />
+                            <img
                                 src={Logo}
-                                alt="Logo"
-                                className="h-28 lg:h-28 w-auto object-contain"
+                                alt="Logo Modo Escuro"
+                                className="hidden dark:block h-28 lg:h-28 w-auto object-contain"
                             />
                         </div>
 
+                        {/* Texto */}
                         <p className="text-[#0A0F24] dark:text-gray-400 text-sm mt-4 md:mt-0 text-center md:text-left">
                             Todos os direitos reservados © 2025.
                         </p>
                     </div>
                 </footer>
             </div>
+
         </div>
     )
 }
