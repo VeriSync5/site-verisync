@@ -47,8 +47,7 @@ export function Instrucoes() {
                 <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
+              Ao sair da residência, aproxime a TAG do leitor para ativar o sistema de segurança. Todos os sensores serão acionados automaticamente, e o indicador luminoso confirmará que o sistema está em funcionamento.
               </p>
             </div>
             <div></div>
@@ -64,8 +63,7 @@ export function Instrucoes() {
                 <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
+              Após a ativação, verifique o status dos sensores pelo aplicativo. Essa etapa garante que todos estejam operando corretamente e que o monitoramento do ambiente esteja ativo.
               </p>
             </div>
           </div>
@@ -79,27 +77,10 @@ export function Instrucoes() {
                 <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base  text-[#0A0F24] dark:text-gray-300 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
+              Ao retornar, aproxime novamente a TAG do leitor para desativar o sistema. O indicador luminoso mudará de estado, confirmando o encerramento da vigilância e permitindo o acesso seguro à residência.
               </p>
             </div>
             <div></div>
-          </div>
-
-          {/* Passo 4 - Direita */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-20 items-start">
-            <div></div>
-            <div>
-              <h3 className="text-3xl font-bold text-white mb-4 md:mb-6">
-                <span className="text-[#0B1438] dark:text-white">Passo</span>
-                <span className="text-[#01f7ff]"> 4</span>
-                <span className="text-[#0B1438] dark:text-white">:</span>
-              </h3>
-              <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </p>
-            </div>
           </div>
 
         </div>

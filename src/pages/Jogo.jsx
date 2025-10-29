@@ -1,7 +1,8 @@
 import { Header } from "../components/Header"
 import Logo from "../imagem/Logo.png"
-import Capajogo from "../imagem/Capajogo.png"
+import Capajogo from "../imagem/Capa.png"
 import LogoModoClaro from "../imagem/LogoModoClaro.png"
+import j0g0 from "../imagem/j0g0.png"
 
 export function Jogo() {
     return (
@@ -23,15 +24,22 @@ export function Jogo() {
                         />
                     </div>
 
-                    {/* Card com capa + info */}
-                    <div className="flex flex-col bg-[#0A0F24] dark:bg-white rounded-lg shadow-md overflow-hidden">
-                        {/* Capa */}
-                        <div className="bg-[#d9d9d9] dark:bg-[#d9d9d9] h-32 flex items-center justify-center">
-                            <span className="text-white dark:text-white text-2xl font-bold">Capa</span>
-                        </div>
+                    {/* Card com jogo + info */}
+<div className="flex flex-col bg-[#0A0F24] dark:bg-white rounded-lg shadow-md overflow-hidden">
+  {/* Jogo (Capa) */}
+  <div className="relative h-32">
+    <img
+      src={j0g0} // 👈 imagem na pasta public
+      alt="Capa do jogo"
+      className="w-full h-full object-cover"
+    />
+    <span className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold bg-black/40">
+      j0g0
+    </span>
+  </div>
                         {/* Info */}
                         <div className="p-4">
-                            <h2 className="text-white dark:text-[#0a0f24] text-xl font-bold mb-2">Nome Jogo</h2>
+                            <h2 className="text-white dark:text-[#0a0f24] text-xl font-bold mb-2">Safe State</h2>
                             <p className="text-white dark:text-[#0a0f24] text-sm leading-relaxed">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -55,14 +63,13 @@ export function Jogo() {
                     <div className="flex flex-col">
                         {/* Capa */}
                         <div className="bg-[#d9d9d9] dark:bg-[#d9d9d9] h-48 flex items-center justify-center">
-                            <span className="text-white dark:text-white text-2xl font-bold">Capa</span>
+                            <span className="text-white dark:text-white text-2xl font-bold"></span>
                         </div>
                         {/* Info */}
                         <div className="p-6">
-                            <h2 className="text-white dark:text-[#0a0f24] text-2xl font-bold mb-4">Nome Jogo</h2>
+                            <h2 className="text-white dark:text-[#0a0f24] text-2xl font-bold mb-4">Safe State</h2>
                             <p className="text-white dark:text-[#0a0f24] leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Safe State é um jogo de plataforma que desafia o jogador a proteger um lar contra invasões. Enfrente inimigos, colete itens e supere desafios em fases que simulam situações reais de segurança, alcançando o verdadeiro estado seguro.
                             </p>
                         </div>
                     </div>

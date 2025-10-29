@@ -15,56 +15,85 @@ export function Referencias() {
                     <h1 className="text-5xl md:text-5xl font-bold text-[#0B1438] dark:text-white mb-16 md:mb-16">Referências</h1>
 
                     {/* Articles Grid */}
-                    <div className="grid md:grid-cols-2 gap-20 md:gap-12 mb-16 pt-16">
-                        {/* Artigo 1 */}
-                        <div className="text-center">
-                            <h2 className="text-3xl md:text-3xl font-bold mb-4">
-                                Artigo <span className="text-[#01f7ff]">1</span>:
-                            </h2>
-                            <a href="www.artigocientifico.com.br" className="text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]">
-                                www.artigocientifico.com.br
-                            </a>
-                        </div>
+<div className="grid md:grid-cols-2 gap-20 md:gap-12 mb-16 pt-16">
+
+{/* Artigo 1 */}
+<div className="text-center">
+  <h2 className="text-3xl md:text-3xl font-bold mb-4">
+    Artigo <span className="text-[#01f7ff]">1</span>:
+  </h2>
+  <a
+    href="https://submissoesrevistarcmos.com.br/index.php/rcmos/article/view/310"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]"
+  >
+    https://submissoesrevistarcmos.com.br/
+  </a>
+</div>
 
                         {/* Artigo 2 */}
-                        <div className="text-center">
-                            <h2 className="text-3xl md:text-3xl font-bold mb-4">
-                                Artigo <span className="text-[#01f7ff]">2</span>:
-                            </h2>
-                            <a href="www.artigocientifico.com.br" className="text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]">
-                                www.artigocientifico.com.br
-                            </a>
-                        </div>
+  <div className="text-center">
+    <h2 className="text-3xl md:text-3xl font-bold mb-4">
+      Artigo <span className="text-[#01f7ff]">2</span>:
+    </h2>
+    <a
+      href="https://periodicorease.pro.br/rease/article/view/8522"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]"
+    >
+      https://periodicorease.pro.br/
+    </a>
+  </div>
+
 
                         {/* Artigo 3 */}
-                        <div className="text-center">
-                            <h2 className="text-3xl md:text-3xl font-bold mb-4">
-                                Artigo <span className="text-[#01f7ff]">3</span>:
-                            </h2>
-                            <a href="www.artigocientifico.com.br" className="text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]">
-                                www.artigocientifico.com.br
-                            </a>
-                        </div>
+  <div className="text-center">
+    <h2 className="text-3xl md:text-3xl font-bold mb-4">
+      Artigo <span className="text-[#01f7ff]">3</span>:
+    </h2>
+    <a
+      href="https://openaccesslegada.emnuvens.com.br/dcet/article/view/338"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]"
+    >
+      https://openaccesslegada.emnuvens.com.br/
+    </a>
+  </div>
+
 
                         {/* Artigo 4 */}
                         <div className="text-center">
-                            <h2 className="text-3xl md:text-3xl font-bold mb-4">
-                                Artigo <span className="text-[#01f7ff]">4</span>:
-                            </h2>
-                            <a href="www.artigocientifico.com.br" className="text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]">
-                                www.artigocientifico.com.br
-                            </a>
-                        </div>
+    <h2 className="text-3xl md:text-3xl font-bold mb-4">
+      Artigo <span className="text-[#01f7ff]">4</span>:
+    </h2>
+    <a
+      href="https://repositorio.uniceub.br/jspui/handle/prefix/17276"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]"
+    >
+     https://repositorio.uniceub.br/
+    </a>
+  </div>
 
-                        {/* Artigo 5 - Agora dentro do grid */}
-                        <div className="text-center md:col-span-2">
-                            <h2 className="text-3xl md:text-3xl font-bold mb-4">
-                                Artigo <span className="text-[#01f7ff]">5</span>:
-                            </h2>
-                            <a href="www.artigocientifico.com.br" className=" text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]">
-                                www.artigocientifico.com.br
-                            </a>
-                        </div>
+
+                     {/* Artigo 5 - Agora dentro do grid */}
+<div className="text-center md:col-span-2">
+  <h2 className="text-3xl md:text-3xl font-bold mb-4">
+    Artigo <span className="text-[#01f7ff]">5</span>:
+  </h2>
+  <a
+    href="https://www.projecaociencia.com.br/index.php/Projecao4/article/view/312"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#0A0F24] dark:text-gray-300 text-base hover:text-[#01f7ff]"
+  >
+    https://www.projecaociencia.com.br/
+  </a>
+</div>
                     </div>
                 </div>
             </main>
