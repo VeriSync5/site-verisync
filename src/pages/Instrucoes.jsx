@@ -1,6 +1,7 @@
 import { Header } from "../components/Header"
 import Logo from "../imagem/Logo.png"
 import LogoModoClaro from "../imagem/LogoModoClaro.png"
+import video from "../imagem/vide00.mp4"
 
 export function Instrucoes() {
   return (
@@ -26,14 +27,25 @@ export function Instrucoes() {
           </span>
         </div>
 
-        {/* Video Placeholder */}
-        <div className="mb-16 px-4 md:px-0">
-          <div className="bg-gray-200 rounded-lg w-full max-w-md md:max-w-2xl mx-auto aspect-[16/9] flex items-center justify-center relative">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-red-500 rounded-full flex items-center justify-center">
-              <div className="w-0 h-0 border-l-[8px] md:border-l-[10px] border-l-white border-t-[5px] md:border-t-[6px] border-t-transparent border-b-[5px] md:border-b-[6px] border-b-transparent ml-1"></div>
-            </div>
-          </div>
-        </div>
+        {/* Vídeo local em loop com efeito */}
+<div className="mb-16 px-4 md:px-0">
+  <div className="relative rounded-lg w-full max-w-md md:max-w-2xl mx-auto aspect-[16/9] overflow-hidden shadow-lg">
+    
+    {/* Efeito de brilho suave */}
+    <div className="absolute inset-0 bg-[#01f7ff]/30 blur-2xl animate-pulse"></div>
+    
+    {/* Seu vídeo local */}
+    <video
+      className="relative w-full h-full object-cover"
+      src={video}
+      autoPlay
+      loop
+      playsInline
+      controls={false}
+    />
+  </div>
+</div>
+
 
         {/* Steps */}
         <div className="pt-16 px-6 md:px-0 space-y-20 md:space-y-16">
@@ -47,7 +59,7 @@ export function Instrucoes() {
                 <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
-              Ao sair da residência, aproxime a TAG do leitor para ativar o sistema de segurança. Todos os sensores serão acionados automaticamente, e o indicador luminoso confirmará que o sistema está em funcionamento.
+                Ao sair da residência, aproxime a TAG do leitor para ativar o sistema de segurança. Todos os sensores serão acionados automaticamente, e o indicador luminoso confirmará que o sistema está em funcionamento.
               </p>
             </div>
             <div></div>
@@ -63,7 +75,7 @@ export function Instrucoes() {
                 <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base text-[#0A0F24] dark:text-gray-300 leading-relaxed">
-              Após a ativação, verifique o status dos sensores pelo aplicativo. Essa etapa garante que todos estejam operando corretamente e que o monitoramento do ambiente esteja ativo.
+                Após a ativação, verifique o status dos sensores pelo aplicativo. Essa etapa garante que todos estejam operando corretamente e que o monitoramento do ambiente esteja ativo.
               </p>
             </div>
           </div>
@@ -77,7 +89,7 @@ export function Instrucoes() {
                 <span className="text-[#0B1438] dark:text-white">:</span>
               </h3>
               <p className="text-base  text-[#0A0F24] dark:text-gray-300 leading-relaxed">
-              Ao retornar, aproxime novamente a TAG do leitor para desativar o sistema. O indicador luminoso mudará de estado, confirmando o encerramento da vigilância e permitindo o acesso seguro à residência.
+                Ao retornar, aproxime novamente a TAG do leitor para desativar o sistema. O indicador luminoso mudará de estado, confirmando o encerramento da vigilância e permitindo o acesso seguro à residência.
               </p>
             </div>
             <div></div>
